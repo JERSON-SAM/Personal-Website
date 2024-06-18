@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+body{
+    background-color: #3d5d8b;
+}
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 50px;
+    margin-top: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #31206e;
+}
+.heading p{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 35px;
+}
+.container{
+    width: 90%;
+    margin:0 auto;
+    padding: 10px 20px;
+
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+
+}
+.about-image:hover img{
+    transform: scale(1.2) ;
+}
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+    
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+    text-align: justify;
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color:#fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-content .read-more:hover{
+    background-color: #3e8e41;
+}
+@media screen and (max-wdth: 768px){
+    heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+
+    }
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content p{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .about-content .read-more{
+        font-size: 16px;
+    }
+}
+    </style>
+    </head>
+    <body>
+        <header class="header">
+        
+            <a href="#" class="logo">J.Butawan</a>
+    
+            <nav class="navbar">
+                <a href="website.html" class="active">Home</a>
+                <a href="aboutme.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="blogs.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="events.html">Events</a>
+            </nav>
+    
+        </header> 
+    
+    
+<div class="heading">
+    <h1>About Me</h1>
+    <p>Mabuhay! My name Is Jerson C. Butawan, A third-year Information technology student in ACLC College of Butuan, I'm aiming for an exciting career in tech, particularly in areas like cybersecurity, artificial intelligence, and software development.</p>
+</div>
+<div class="container">
+    <section class="about">
+        <div class="about-image">
+            <img src="sonny.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h1>Mission Statement</h1>
+            <p>I'm aiming for a dynamic tech career focused on cybersecurity, AI, and software engineering, where I can contribute to innovative projects and make a positive impact.I love exploring new tech, improving my coding skills, and staying updated with industry advancements. I prioritize continuous learning, innovation, and ethical practices in technology, aiming to contribute responsibly to the tech community.</p>
+            <a href="" class="read-more">Read More</a>
+        </div>
+    </section>
+    
+</div>
+       
+
+    
+</body>
+</html>
